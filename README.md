@@ -60,7 +60,7 @@ This function returns a `Promise` if no `callback` is provided.
 const Consulite = require('consulite');
 const Wreck = require('wreck');
 
-Consulite.getService('users', (err, service) {
+Consulite.getService('users', (err, service) => {
   if (err) {
     console.error(err);
     return;
@@ -81,7 +81,7 @@ const Wreck = require('wreck');
 
 Consulite.config({ consul: 'http://myconsul.com' });
 
-Consulite.getService('users', (err, service) {
+Consulite.getService('users', (err, service) => {
   if (err) {
     console.error(err);
     return;
